@@ -19,7 +19,7 @@
      * [Les fonctions ne devraient faire q'une seule chose](#functions-should-do-one-thing)
      * [Le nom d'une fonction devrait dire ce qu'elle fait](#function-names-should-say-what-they-do)
      * [Les fonctions ne devraient avoir qu'un seul niveau d'abstraction](#functions-should-only-be-one-level-of-abstraction)
-     * [Don't use flags as function parameters](#dont-use-flags-as-function-parameters)
+     * [N'utilisez pas de flag dans les paramètres d'une fonction](#dont-use-flags-as-function-parameters)
      * [Avoid Side Effects](#avoid-side-effects)
      * [Don't write to global functions](#dont-write-to-global-functions)
      * [Don't use a Singleton pattern](#dont-use-a-singleton-pattern)
@@ -649,11 +649,12 @@ class BetterJSAlternative
 
 **[⬆ Haut de la page](#table-of-contents)**
 
-### Don't use flags as function parameters
+### N'utilisez pas de flag dans les paramètres d'une fonction
 
-Flags tell your user that this function does more than one thing. Functions should 
-do one thing. Split out your functions if they are following different code paths 
-based on a boolean.
+Un flag signale aux utilisateurs que la fonction fait plus qu'une seule chose. Les fonctions
+devraient faire qu'une seule chose. Découpez vos fonctions si le code est différnt en 
+fonction de la valeur d'un booléen.
+
 
 **Mauvais:**
 

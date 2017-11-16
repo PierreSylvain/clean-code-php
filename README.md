@@ -6,8 +6,8 @@
   2. [Variables](#variables)
      * [Utiliser des noms de variables significatifs et prononçables](#use-meaningful-and-pronounceable-variable-names)
      * [Utilisez le même vocabulaire pour le même type de variables](#use-the-same-vocabulary-for-the-same-type-of-variable)
-     * [Utilisez des noms interrogeable (1ère partie)](#use-searchable-names-part-1)
-     * [Utilisez des noms interrogeable (2ème partie)](#use-searchable-names-part-2)
+     * [Utilisez des noms repérables (1ère partie)](#use-searchable-names-part-1)
+     * [Utilisez des noms repérables (2ème partie)](#use-searchable-names-part-2)
      * [Utilisez des variables explicatives](#use-explanatory-variables)
      * [Eviter les imbriquations trop profondes et les return prématurés (1ère partie)](#avoid-nesting-too-deeply-and-return-early-part-1)
      * [Eviter les imbriquations trop profondes et les return prématurés (2ème partie)](#avoid-nesting-too-deeply-and-return-early-part-2)
@@ -93,12 +93,12 @@ getUser();
 
 **[⬆ Haut de la page](#table-of-contents)**
 
-### Utilisez des noms interrogeable (1ère partie)
+### Utilisez des noms repérables (1ère partie)
 
 Nous lirons plus de code que nous n'en écrirons jamais. Il est important que le code que nous écrivons soit 
-lisible et interrogeable. En *ne* nommant pas les variables qui finissent par être significatives pour 
+lisible et repérable. En *ne* nommant pas les variables qui finissent par être significatives pour 
 notre programme, nous blessons nos lecteurs.
-Rendez vos noms interrogeable.
+Rendez vos noms repérables.
 
 **Mauvais:**
 
@@ -113,7 +113,7 @@ $result = $serializer->serialize($data, 448);
 $json = $serializer->serialize($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 ```
 
-### Utilisez des noms interrogeable (2ème partie)
+### Utilisez des noms repérables (2ème partie)
 
 **Mauvais:**
 
